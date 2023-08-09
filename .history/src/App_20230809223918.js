@@ -3,7 +3,7 @@ import Search from "./components/Search/Search";
 
 function App() {
   return (
-    <div class="container max-w-7xl my-5 mx-auto">
+    <div class="container max-w-7xl my-5">
       <div>hello world</div>
       <Search />
     </div>
