@@ -6,19 +6,19 @@ function Search({ onSearchChange }) {
   const [search, setSearch] = useState(null);
 
   const loadOptions = (inputValue) => {
-    return fetch(
-      `${GEO_API_URL}/cities?minPopulation=1000&namePrefix=${inputValue}`,
-      geoApiOptions
-    )
+    const loadOptions = (inputValue, prevOptions, additional) => {
+      const offset = additional ? additional.offset : 0;
       .then((response) => response.json())
       .then((response) => {
         return {
-          options: response.data.map((city) => {
-            return {
-              value: `${city.latitude} ${city.longitude}`,
-              label: `${city.name},${city.countryCode}`,
-            };
-          }),
+          options: response.data.map((city) => ({
+            value: `${city.latitude} ${city.longitude}`,
+            label: `${city.name},${city.countryCode}`,
+          })),
+          hasMore: response.meta.pagination.hasMore,
+          additional: {
+            offset: offset + response.meta.pagination.limit,
+          },
         };
       })
       .catch((err) => console.error(err));

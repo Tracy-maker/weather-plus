@@ -13,7 +13,7 @@ function App() {
       <div className=" mx-auto w-9/12 pb-9 pt-5">
         <Search onSearchChange={handleOnSearchChange} />
       </div>
-      <div className=" mx-auto w-8/12 bg-white rounded-md shadow-lg overflow-hidden ">
+      <div className=" mx-auto w-9/12 bg-white rounded-3xl shadow-lg overflow-hidden ">
         <div>Hello</div>
       </div>
     </div>
