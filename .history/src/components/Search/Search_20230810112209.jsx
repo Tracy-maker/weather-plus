@@ -1,13 +1,13 @@
 import { useState } from "react";
 import { AsyncPaginate } from "react-select-async-paginate";
 
-function Search({ onSearchChange }) {
+function Search({onSearchChange}) {
   const [search, setSearch] = useState(null);
 
-  const handleChange = (searchData) => {
-    setSearch(searchData);
-    onSearchChange(searchData);
-  };
+  const handleChange=(searchData)=>{
+setSearch(searchData)
+onSearchChange(searchData)
+  }
   return (
     <AsyncPaginate
       placeholder="Search for city"
