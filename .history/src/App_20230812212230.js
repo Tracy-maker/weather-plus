@@ -1,4 +1,3 @@
-import Current from "./app/Current/Current";
 import Search from "./app/Search/Search";
 import p1 from "./assets/background1.jpg";
 function App() {
@@ -15,7 +14,7 @@ function App() {
         <Search onSearchChange={handleOnSearchChange} />
       </div>
       <div className=" mx-auto w-8/12 bg-white rounded-md shadow-lg overflow-hidden ">
-       <Current/>
+        <div>Hello</div>
       </div>
     </div>
   );

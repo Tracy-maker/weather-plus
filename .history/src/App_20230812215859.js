@@ -9,7 +9,7 @@ function App() {
   return (
     <div
       className="columns-7xl h-screen w-full flex flex-col items-stretch bg-cover bg-no-repeat bg-center  font-custom"
-      style={{ backgroundImage: `url(${p1})` }}
+      style={{ backgroundImage: `url(${p2})` }}
     >
       <div className=" mx-auto w-9/12 pb-9 pt-5 ">
         <Search onSearchChange={handleOnSearchChange} />

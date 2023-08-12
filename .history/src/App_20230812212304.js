@@ -1,4 +1,3 @@
-import Current from "./app/Current/Current";
 import Search from "./app/Search/Search";
 import p1 from "./assets/background1.jpg";
 function App() {
