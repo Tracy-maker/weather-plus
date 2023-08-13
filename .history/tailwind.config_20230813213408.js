@@ -7,7 +7,7 @@ module.exports = {
         custom: ["Preahvihear", "sans-serif"], 
       },
       fontSize: {
-        'base': ['20px', '1.5'], 
+        'base': ['16px', '1.5'], // Example font size customization
       },
     },
   },
