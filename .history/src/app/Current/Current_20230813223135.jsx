@@ -1,4 +1,4 @@
-import p2 from "../../assets/background2.jpg";
+import p2 from "../assets/background2.jpg";
 import Temperature from "../../components/Temperature/Temperature";
 import SubText from "./components/SubText/SubText";
 import Metas from "./components/Metas/Metas";
