@@ -7,7 +7,7 @@ function App() {
   };
 
   return (
-    <div className="h-screen w-screen flex-col justify-center items-center bg-cover bg-no-repeat bg-center font-custom" style={{ backgroundImage: `url(${p1})` }}>
+    <div className="h-screen w-screen flex justify-center items-center bg-cover bg-no-repeat bg-center" style={{ backgroundImage: `url(${p1})` }}>
       <div className="mx-auto w-9/12 pb-9 pt-5">
         <Search onSearchChange={handleOnSearchChange} />
       </div>

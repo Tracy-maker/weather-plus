@@ -1,4 +1,3 @@
-import React from "react";
 import p2 from "../../assets/background2.jpg";
 
 const Current = () => {
@@ -11,5 +10,4 @@ const Current = () => {
     </div>
   );
 };
-
 export default Current;
