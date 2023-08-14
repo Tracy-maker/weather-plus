@@ -1,5 +1,5 @@
 import Day from "./components/Day/Day";
-
+import Heading from "../../components/Heading/Heading";
 
 const Forecast = () => {
   return (

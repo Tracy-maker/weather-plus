@@ -18,7 +18,7 @@ function App() {
       <div className="mx-auto bg-white overflow-hidden w-2/3 rounded-xl shadow-md  text-white">
         <Current />
         <div className="flex px-5 py-10 text-black text-xl">
-          <Forecast />
+            <Forecast />
         </div>
       </div>
     </div>

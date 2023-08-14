@@ -1,10 +1,10 @@
 import Day from "./components/Day/Day";
-
+import Heading from "../../components/Heading/Heading";
 
 const Forecast = () => {
   return (
     <div>
-      <h2 className="m-3 tracking-wide font-light">Forecast</h2>
+      <Heading>Forecast</Heading>
       <div className="mt-7 flex">
         <Day dayOfWeek="MON" temperature="9" weather="rain"></Day>
         <Day dayOfWeek="TUE" temperature="19" weather="rain"></Day>
