@@ -14,9 +14,9 @@ function App() {
       <div className="mx-auto w-9/12 pb-9 pt-5">
         <Search onSearchChange={handleOnSearchChange} />
       </div>
-      <div className="mx-auto bg-white overflow-hidden w-2/3 rounded-xl shadow-md  text-white">
+      <div className="mx-auto bg-white overflow-hidden w-2/3 rounded-xl shadow-md">
         <Current />
-        <div className="flex px-20 py-10 text-black">
+        <div className="flex px-20 py-10">
           <div className="text-xl">Forecast</div>
         </div>
       </div>
