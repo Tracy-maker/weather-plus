@@ -8,10 +8,10 @@ const Current = ({data}) => {
     <div className="flex py-16 px-20 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url(${p2})` }}>
       <div className="flex flex-col justify-center items-start space-y-4">
         <div className="text-7xl">
-          <Temperature>{Math.round(data.main.temp)}</Temperature>
+          <Temperature>15.71</Temperature>
         </div>
         <div className="text-center text-xl">
-          <SubText>{data.weather[0].main}</SubText>
+          <SubText>Clouds</SubText>
         </div>
         <Metas />
       </div>

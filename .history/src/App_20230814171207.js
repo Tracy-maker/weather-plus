@@ -15,7 +15,7 @@ function App() {
       `${OPEN_WEATHER_MAP_BASE_URL}/weather?lat=${lat}&lon=${lon}&appid=${APP_ID}&units=metric`
     );
     const forecastFetch = fetch(
-      `${OPEN_WEATHER_MAP_BASE_URL}/forecast?lat=${lat}&lon=${lon}&appid=${APP_ID}&units=metric`
+      `${OPEN_WEATHER_MAP_BASE_URL}/forecast?lat=${lat}&lon=${lon}&appid=${APP_ID}`
     );
     Promise.all([currentWeatherFetch, forecastFetch])
       .then(async (response) => {

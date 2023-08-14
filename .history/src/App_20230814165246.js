@@ -12,10 +12,10 @@ function App() {
   const handleOnSearchChange = (searchData) => {
     const [lat, lon] = searchData.value.split(" ");
     const currentWeatherFetch = fetch(
-      `${OPEN_WEATHER_MAP_BASE_URL}/weather?lat=${lat}&lon=${lon}&appid=${APP_ID}&units=metric`
+      `${OPEN_WEATHER_MAP_BASE_URL}/weather?lat=${lat}&lon=${lon}&appid=${APP_ID}`
     );
     const forecastFetch = fetch(
-      `${OPEN_WEATHER_MAP_BASE_URL}/forecast?lat=${lat}&lon=${lon}&appid=${APP_ID}&units=metric`
+      `${OPEN_WEATHER_MAP_BASE_URL}/forecast?lat=${lat}&lon=${lon}&appid=${APP_ID}`
     );
     Promise.all([currentWeatherFetch, forecastFetch])
       .then(async (response) => {
@@ -28,9 +28,6 @@ function App() {
       .catch((err) => console.log(err));
   };
 
-  console.log(currentWeather);
-  console.log(forecast);
-
   return (
     <div
       className="h-screen w-screen flex-col justify-center items-center bg-cover bg-no-repeat bg-center font-custom text-base"
@@ -40,7 +37,7 @@ function App() {
         <Search onSearchChange={handleOnSearchChange} />
       </div>
       <div className="mx-auto bg-white overflow-hidden w-2/3 rounded-xl shadow-md  text-white">
-        {currentWeather && <Current data={currentWeather} />}
+        <Current />
         <div className="mx-auto flex px-5 py-4">
           <Forecast />
         </div>
