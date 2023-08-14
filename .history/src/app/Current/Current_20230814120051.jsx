@@ -15,7 +15,7 @@ const Current = () => {
         </div>
         <Metas />
       </div>
-      <div className="flex-grow text-4xl text-right mt-4">
+      <div className="flex-grow text-2xl text-right mt-4">
         Melbourne
       </div>
     </div>

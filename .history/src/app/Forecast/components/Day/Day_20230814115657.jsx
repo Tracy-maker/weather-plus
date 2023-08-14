@@ -5,7 +5,7 @@ const Day = ({ dayOfWeek, weather, temperature }) => (
   <div className="text-center ml-10">
     <div className="mb-4">{dayOfWeek}</div>
     <WeatherImage className="w-16 h-16 mx-auto" weather={weather} />
-    <div className="mt-4">
+    <div className="mt-3">
       <Temperature>{temperature}</Temperature>
     </div>
   </div>

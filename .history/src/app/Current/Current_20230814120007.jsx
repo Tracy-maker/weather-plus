@@ -14,8 +14,9 @@ const Current = () => {
           <SubText>Clouds</SubText>
         </div>
         <Metas />
+        <div className="absolute bg-black opacity-30 left-0 right-0 bottom-0 h-6"></div>
       </div>
-      <div className="flex-grow text-4xl text-right mt-4">
+      <div className="flex-grow text-2xl text-right mt-4">
         Melbourne
       </div>
     </div>
