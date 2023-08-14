@@ -10,7 +10,7 @@ const Forecast = ({ data }) => {
   for (let i = startIndex; forecastDays.length < 7; i = (i + 1) % 7) {
     forecastDays.push({
       day: WEEK_DAYS[i],
-      ...data[forecastDays.length], 
+      ...data[forecastDays.length], // Check if this entry in 'data' is structured correctly
     });
   }
 
@@ -22,7 +22,7 @@ const Forecast = ({ data }) => {
           <Day
             key={index}
             dayOfWeek={dayData.day}
-            weather={dayData.weather[0]} 
+            weather={dayData.weather[0]} // Check if 'weather' property is an array
             temperature={dayData.temperature}
           />
         ))}

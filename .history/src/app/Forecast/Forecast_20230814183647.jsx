@@ -22,7 +22,7 @@ const Forecast = ({ data }) => {
           <Day
             key={index}
             dayOfWeek={dayData.day}
-            weather={dayData.weather[0]} 
+            weather={dayData.weather[0]} // Check if 'weather' property is an array
             temperature={dayData.temperature}
           />
         ))}

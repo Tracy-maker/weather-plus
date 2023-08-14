@@ -11,8 +11,7 @@ const Forecast = ({ data }) => {
     forecastDays.push({
       day: WEEK_DAYS[i],
       ...data[forecastDays.length], 
-    });
-  }
+  })
 
   return (
     <div className="text-black text-xl">
@@ -22,8 +21,9 @@ const Forecast = ({ data }) => {
           <Day
             key={index}
             dayOfWeek={dayData.day}
-            weather={dayData.weather[0]} 
+            weather={dayData.weather[0]}
             temperature={dayData.temperature}
+            
           />
         ))}
       </div>

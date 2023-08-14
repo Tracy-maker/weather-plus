@@ -10,7 +10,7 @@ const Forecast = ({ data }) => {
   for (let i = startIndex; forecastDays.length < 7; i = (i + 1) % 7) {
     forecastDays.push({
       day: WEEK_DAYS[i],
-      ...data[forecastDays.length], 
+      ...data[forecastDays.length], // Spread the weather data
     });
   }
 
@@ -22,8 +22,8 @@ const Forecast = ({ data }) => {
           <Day
             key={index}
             dayOfWeek={dayData.day}
-            weather={dayData.weather[0]} 
             temperature={dayData.temperature}
+            weather={dayData.weather[0]}
           />
         ))}
       </div>
