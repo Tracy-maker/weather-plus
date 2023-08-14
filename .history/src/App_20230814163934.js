@@ -3,7 +3,6 @@ import Forecast from "./app/Forecast/Forecast";
 import Search from "./app/Search/Search";
 import p1 from "./assets/background1.jpg";
 import { APP_ID, OPEN_WEATHER_MAP_BASE_URL } from "./config";
-
 function App() {
   const handleOnSearchChange = (searchData) => {
     const [lat, lon] = searchData.value.split(" ");

@@ -3,7 +3,6 @@ import Forecast from "./app/Forecast/Forecast";
 import Search from "./app/Search/Search";
 import p1 from "./assets/background1.jpg";
 import { APP_ID, OPEN_WEATHER_MAP_BASE_URL } from "./config";
-
 function App() {
   const handleOnSearchChange = (searchData) => {
     const [lat, lon] = searchData.value.split(" ");
@@ -13,10 +12,6 @@ function App() {
     const forecastFetch = fetch(
       `${OPEN_WEATHER_MAP_BASE_URL}/forecast?lat=${lat}&lon=${lon}&appid=${APP_ID}`
     );
-    Promise.all([currentWeatherFetch, forecastFetch]).then(async(response)=>{
-      const weatherResponse= await response[0].json();
-      const forecastResponse=await response[1].json();
-    })
   };
 
   return (
