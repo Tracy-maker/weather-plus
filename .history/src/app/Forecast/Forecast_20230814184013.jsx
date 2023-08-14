@@ -10,7 +10,7 @@ const Forecast = ({ data }) => {
   for (let i = startIndex; forecastDays.length < 7; i = (i + 1) % 7) {
     forecastDays.push({
       day: WEEK_DAYS[i],
-      ...data[forecastDays.length],
+      ...data[forecastDays.length], 
     });
   }
 
@@ -18,18 +18,14 @@ const Forecast = ({ data }) => {
     <div className="text-black text-xl">
       <h2 className="m-0.5 tracking-wide font-light">Forecast</h2>
       <div className="mt-5 flex">
-        {forecastDays.map((dayData, index) => {
-          const weather = dayData.weather ? dayData.weather[0] : null;
-
-          return (
-            <Day
-              key={index}
-              dayOfWeek={dayData.day}
-              weather={weather}
-              temperature={dayData.temperature}
-            />
-          );
-        })}
+        {forecastDays.map((dayData, index) => (
+          <Day
+            key={index}
+            dayOfWeek={dayData.day}
+            weather={dayData.dayData.weather[0]} 
+            temperature={dayData.temperature}
+          />
+        ))}
       </div>
     </div>
   );

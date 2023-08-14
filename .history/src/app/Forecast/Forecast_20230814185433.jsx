@@ -20,7 +20,6 @@ const Forecast = ({ data }) => {
       <div className="mt-5 flex">
         {forecastDays.map((dayData, index) => {
           const weather = dayData.weather ? dayData.weather[0] : null;
-
           return (
             <Day
               key={index}
