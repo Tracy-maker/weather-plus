@@ -14,6 +14,7 @@ const Forecast = ({ data }) => {
       weatherData: data[forecastDays.length] || {}, // Get the corresponding weather data from the data prop
     });
   }
+
   return (
     <div className="text-black text-xl">
       <h2 className="m-0.5 tracking-wide font-light">Forecast</h2>
@@ -22,10 +23,8 @@ const Forecast = ({ data }) => {
           <React.Fragment key={index}>
             <div className="mb-5">{dayData.day}</div>
             <Day
-              temperature={`${parseFloat(
-                dayData.main.temp
-              ).toFixed(0)}°`}
-              weather={dayData.weather[0] || "Unknown"}
+              temperature={dayData.weatherData.temperature || "N/A"}
+              weather={dayData.weatherData.weatherCondition || "Unknown"}
             ></Day>
           </React.Fragment>
         ))}
@@ -33,6 +32,5 @@ const Forecast = ({ data }) => {
     </div>
   );
 };
-// ...
 
 export default Forecast;

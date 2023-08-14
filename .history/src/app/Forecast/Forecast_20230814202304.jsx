@@ -23,7 +23,7 @@ const Forecast = ({ data }) => {
             <div className="mb-5">{dayData.day}</div>
             <Day
               temperature={`${parseFloat(
-                dayData.main.temp
+                dayData.main.temperature
               ).toFixed(0)}°`}
               weather={dayData.weather[0] || "Unknown"}
             ></Day>

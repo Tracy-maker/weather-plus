@@ -1,4 +1,3 @@
-import React from "react";
 import Day from "./components/Day/Day";
 
 const WEEK_DAYS = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
@@ -11,28 +10,30 @@ const Forecast = ({ data }) => {
   for (let i = startIndex; forecastDays.length < 7; i = (i + 1) % 7) {
     forecastDays.push({
       day: WEEK_DAYS[i],
-      weatherData: data[forecastDays.length] || {}, // Get the corresponding weather data from the data prop
+      ...data[forecastDays.length],
     });
   }
+
   return (
     <div className="text-black text-xl">
       <h2 className="m-0.5 tracking-wide font-light">Forecast</h2>
       <div className="mt-5 flex">
-        {forecastDays.map((dayData, index) => (
-          <React.Fragment key={index}>
-            <div className="mb-5">{dayData.day}</div>
-            <Day
-              temperature={`${parseFloat(
-                dayData.main.temp
-              ).toFixed(0)}°`}
-              weather={dayData.weather[0] || "Unknown"}
-            ></Day>
-          </React.Fragment>
-        ))}
+        {forecastDays.map((dayData, index) => {
+          console.log("Current dayData:", dayData);
+          const weather = dayData.weather ? dayData.weather[0] : null;
+
+          return (
+            <div key={index}>
+              {" "}
+              {/* Add a unique key for the wrapping div */}
+              <div className="mb-5">{dayData.day}</div> {/* Use dayData.day */}
+              <Day weather={weather} temperature={dayData.temperature} />
+            </div>
+          );
+        })}
       </div>
     </div>
   );
 };
-// ...
 
 export default Forecast;

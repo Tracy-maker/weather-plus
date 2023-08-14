@@ -14,6 +14,7 @@ const Forecast = ({ data }) => {
       weatherData: data[forecastDays.length] || {}, // Get the corresponding weather data from the data prop
     });
   }
+
   return (
     <div className="text-black text-xl">
       <h2 className="m-0.5 tracking-wide font-light">Forecast</h2>
@@ -23,7 +24,7 @@ const Forecast = ({ data }) => {
             <div className="mb-5">{dayData.day}</div>
             <Day
               temperature={`${parseFloat(
-                dayData.main.temp
+                item.main.temp
               ).toFixed(0)}°`}
               weather={dayData.weather[0] || "Unknown"}
             ></Day>
@@ -33,6 +34,5 @@ const Forecast = ({ data }) => {
     </div>
   );
 };
-// ...
 
 export default Forecast;
