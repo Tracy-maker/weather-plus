@@ -9,7 +9,7 @@ const Meta = ({ title, children }) => {
       <div>
         <SubText>{children}</SubText>
       </div>
-    </>
+      </>
   );
 };
 
