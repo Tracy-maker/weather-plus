@@ -28,7 +28,6 @@ const Day = ({ data }) => {
 
   const filterNextFiveDaysData = (weatherData) => {
     const today = moment();
-
     const fiveDaysLater = moment().add(5, "days");
     const groupedData = {};
 
@@ -59,11 +58,10 @@ const Day = ({ data }) => {
       {nextFiveDaysData.map((item, index) => (
         <div
           key={index}
-          className="flex flex-col justify-center items-center mr-20 text-gray-600"
-        >
+          className="flex flex-col justify-center items-center mr-20 text-gray-600">
           <div className="text-lg font-medium">{forecastDays[index]}</div>
           <WeatherImage weather={item.weather[0]} />
-          <Temperature className="pl-1">{Math.round(`${item.main.temp_min}`)}/{Math.round(`${item.main.temp_max}`)}</Temperature>
+          <div className="pl-1">{Math.round(`${item.main.temp_min}`/`${item.main.temp_max}`)}</div>
         </div>
       ))}
     </div>

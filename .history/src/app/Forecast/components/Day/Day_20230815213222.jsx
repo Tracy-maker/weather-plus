@@ -63,7 +63,7 @@ const Day = ({ data }) => {
         >
           <div className="text-lg font-medium">{forecastDays[index]}</div>
           <WeatherImage weather={item.weather[0]} />
-          <Temperature className="pl-1">{Math.round(`${item.main.temp_min}`)}/{Math.round(`${item.main.temp_max}`)}</Temperature>
+          <Temperature className="pl-1">{`${item.main.temp}`}</Temperature>
         </div>
       ))}
     </div>
