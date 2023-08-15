@@ -1,6 +1,9 @@
 import Temperature from "../../../../components/Temperature/Temperature";
 import WeatherImage from "../../../../components/WeatherImage/WeatherImage";
 
+const DailyBox =
+  ;
+
 const WEEK_DAYS = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
 
 const Day = ({ data }) => {
@@ -14,7 +17,7 @@ const Day = ({ data }) => {
   return (
     <div className="text-center flex justify-center items-center">
       {data.slice(0, 5).map((item, index) => (
-        <div key={index} className="flex flex-col justify-center items-center mr-14 text-gray-600"Ç>
+        <div key={index} className="flex flex-col justify-center items-center mr-14 text-gray-600">
           <div className="text-lg font-medium">{forecastDays[index]}</div>
           <WeatherImage weather={item.weather[0]} />
           <Temperature className="pl-1">{`${parseFloat(item.main.temp).toFixed(

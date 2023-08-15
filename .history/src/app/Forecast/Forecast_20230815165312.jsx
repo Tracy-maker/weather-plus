@@ -6,6 +6,7 @@ const Forecast=({data})=> {
   return (
     <div className="p-7">
       <h2 className="text-xl pb-4">FORECAST</h2>
+    
       <Day data={data} />
     </div>
   );
