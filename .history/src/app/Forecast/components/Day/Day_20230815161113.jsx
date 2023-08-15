@@ -11,7 +11,7 @@ const DailyBox = "flex flex-col justify-center items-center mr-14 text-gray-600"
 
 const WEEK_DAYS = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
 
-const Day=({ data })=> {
+function Weeks({ dailyForecast }) {
   const dayInAWeek = new Date().getDay();
   const startIndex = (dayInAWeek + 1) % 7;
   const forecastDays = [];
@@ -21,7 +21,7 @@ const Day=({ data })=> {
 
   return (
     <div className={ForeCastContainer}>
-      {data.slice(0, 5).map((item, index) => (
+      {dailyForecast.slice(0, 5).map((item, index) => (
         <div key={index} className={DailyBox}>
           <div className="text-lg font-medium">{forecastDays[index]}</div>
           <ImageIcon weather={item.weather[0]} />
@@ -34,4 +34,4 @@ const Day=({ data })=> {
   );
 }
 
-export default Day;
+export default Weeks;

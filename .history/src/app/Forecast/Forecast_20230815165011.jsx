@@ -1,5 +1,4 @@
 import React from "react";
-import Day from "./components/Day/Day";
 
 
 function Forecast({data}) {
@@ -7,7 +6,7 @@ function Forecast({data}) {
     <div className="p-7">
       <h2 className="text-xl font-semibold pb-4">FORECAST</h2>
     
-      <Day data={data} />
+      <DynamicsCo data={data} />
     </div>
   );
 }

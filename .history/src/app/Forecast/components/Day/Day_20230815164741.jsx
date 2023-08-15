@@ -21,7 +21,7 @@ const Day=({ data })=> {
 
   return (
     <div className={ForeCastContainer}>
-      {data.slice(0, 5).map((item, index) => (
+      {dailyForecast.slice(0, 5).map((item, index) => (
         <div key={index} className={DailyBox}>
           <div className="text-lg font-medium">{forecastDays[index]}</div>
           <ImageIcon weather={item.weather[0]} />
