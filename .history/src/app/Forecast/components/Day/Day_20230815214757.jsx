@@ -64,8 +64,8 @@ const Day = ({ data }) => {
           <div className="text-lg font-medium">{forecastDays[index]}</div>
           <WeatherImage weather={item.weather[0]} />
           <Temperature className="pl-1">
-            {`${parseFloat(item.main.temp_min).toFixed(1)}`} /{" "}
-            {`${parseFloat(item.main.temp_max).toFixed(1)}`}
+            {`${parseFloat(item.main.temp_min).toFixed(1)}`} /
+              {`${parseFloat(item.main.temp_max).toFixed(1)}`}
           </Temperature>
         </div>
       ))}
