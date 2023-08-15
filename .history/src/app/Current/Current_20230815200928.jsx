@@ -5,9 +5,9 @@ import Metas from "./components/Metas/Metas";
 
 const Current = ({data}) => {
   return (
-    <div className="flex py-10 px-16  bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url(${p2})` }}>
-      <div className="flex-col text-center justify-center items-start space-y-4">
-        <div className="text-left text-7xl">
+    <div className="flex py-10 px-16 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url(${p2})` }}>
+      <div className="flex flex-col  justify-center items-start space-y-4">
+        <div className="text-7xl">
           <Temperature>{Math.round(data.main.temp)}</Temperature>
         </div>
         <div className="text-xl">

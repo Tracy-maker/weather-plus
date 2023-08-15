@@ -36,9 +36,7 @@ const Day = ({ data }) => {
       const date = moment(dataPoint.dt_txt, "YYYY-MM-DD HH:mm:ss").format(
         "YYYY-MM-DD"
       );
-      if (!groupedData[date]) {
-        groupedData[date] = [];
-      }
+     /
       groupedData[date].push(dataPoint);
     });
 
