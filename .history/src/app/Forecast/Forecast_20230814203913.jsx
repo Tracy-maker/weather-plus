@@ -14,7 +14,7 @@ const Forecast = ({ data }) => {
       weatherData: data[i] || {},
     });
   }
-  console.log(data)
+  console.log(forecastDays)
   return (
     <div className="text-black text-xl">
       <h2 className="m-0.5 tracking-wide font-light">Forecast</h2>

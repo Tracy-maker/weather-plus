@@ -9,12 +9,10 @@ const Forecast = ({ data }) => {
   const forecastDays = [];
 
   for (let i = startIndex; forecastDays.length < 7; i = (i + 1) % 7) {
-    forecastDays.push({
-      day: WEEK_DAYS[i],
-      weatherData: data[i] || {},
-    });
+    forecastDays.push(
+     WEEK_DAYS[i]);
   }
-  console.log(data)
+  console.log(forecastDays)
   return (
     <div className="text-black text-xl">
       <h2 className="m-0.5 tracking-wide font-light">Forecast</h2>
