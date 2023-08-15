@@ -20,7 +20,6 @@ function App() {
     Promise.all([currentWeatherFetch, forecastFetch])
       .then(async (response) => {
         const weatherResponse = await response[0].json();
-      
         const forecastResponse = await response[1].json();
 
         setCurrentWeather({ city: searchData.label, ...weatherResponse });
@@ -42,7 +41,7 @@ function App() {
       </div>
       <div className="mx-auto bg-white overflow-hidden w-2/3 rounded-xl shadow-md  text-white">
         {currentWeather && <Current data={currentWeather} />}
-        <div className="mx-auto flex px-5 py- text-black">
+        <div className="mx-auto flex px-5 py-1 text-black">
          {forecast && <Forecast data={forecast}/>}
         </div>
       </div>

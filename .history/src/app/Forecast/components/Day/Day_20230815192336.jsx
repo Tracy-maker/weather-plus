@@ -6,7 +6,7 @@ import Temperature from "../../../../components/Temperature/Temperature";
 const WEEK_DAYS = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
 
 const Day = ({ data }) => {
-  const [nextFiveDaysData, setNextFiveDaysData] = useState([]);
+  const [nextSevenDaysData, setNextSevenDaysData] = useState([]);
 
   // Define forecastDays at the component level
   const dayInAWeek = new Date().getDay();
@@ -18,16 +18,16 @@ const Day = ({ data }) => {
 
   useEffect(() => {
     if (data && Array.isArray(data.list)) {
-      const filteredData = filterNextFiveDaysData(data.list);
-      setNextFiveDaysData(filteredData);
+      const filteredData = filterNextSevenDaysData(data.list);
+      setNextSevenDaysData(filteredData);
     } else {
       console.error("Data is not in the expected format:", data);
     }
   }, [data]);
 
-  const filterNextFiveDaysData = (weatherData) => {
+  const filterNextSevenDaysData = (weatherData) => {
     const today = moment();
-    const fiveDaysLater = moment().add(5, "days");
+    const sevenDaysLater = moment().add(7, "days");
 
     const groupedData = {};
 
@@ -42,23 +42,23 @@ const Day = ({ data }) => {
       groupedData[date].push(dataPoint);
     });
 
-    // Filter and flatten grouped data for the next 5 days
-    const nextFiveDaysData = Object.values(groupedData)
+    // Filter and flatten grouped data
+    const nextSevenDaysData = Object.values(groupedData)
       .filter((dataPoints) => {
         const date = moment(dataPoints[0].dt_txt, "YYYY-MM-DD HH:mm:ss");
-        return date.isSameOrAfter(today) && date.isBefore(fiveDaysLater);
+        return date.isSameOrAfter(today) && date.isBefore(sevenDaysLater);
       })
       .map((dataPoints) => dataPoints[0]);
 
-    return nextFiveDaysData;
+    return nextSevenDaysData;
   };
 
   return (
-    <div className=" mx-5 mb-4 text-center flex justify-center items-center">
-      {nextFiveDaysData.map((item, index) => (
+    <div className="text-center flex justify-center items-center">
+      {nextSevenDaysData.slice(0, 5).map((item, index) => (
         <div
           key={index}
-          className="flex flex-col justify-center items-center mr-20 text-gray-600"
+          className="flex flex-col justify-center items-center mr-14 text-gray-600"
         >
           <div className="text-lg font-medium">{forecastDays[index]}</div>
           <WeatherImage weather={item.weather[0]} />

@@ -54,11 +54,11 @@ const Day = ({ data }) => {
   };
 
   return (
-    <div className=" mx-5 mb-4 text-center flex justify-center items-center">
+    <div className=" mx-5text-center flex justify-center items-center">
       {nextFiveDaysData.map((item, index) => (
         <div
           key={index}
-          className="flex flex-col justify-center items-center mr-20 text-gray-600"
+          className="flex flex-col justify-center items-center mr-14 text-gray-600"
         >
           <div className="text-lg font-medium">{forecastDays[index]}</div>
           <WeatherImage weather={item.weather[0]} />

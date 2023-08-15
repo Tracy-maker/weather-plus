@@ -54,7 +54,7 @@ const Day = ({ data }) => {
   };
 
   return (
-    <div className=" mx-5 mb-4 text-center flex justify-center items-center">
+    <div className=" mx-10 text-center flex justify-center items-center">
       {nextFiveDaysData.map((item, index) => (
         <div
           key={index}

@@ -4,7 +4,7 @@ import Day from "./components/Day/Day";
 const Forecast = ({ data }) => {
   return (
     <div className="p-1">
-      <h2 className="mt-6 mb-4 text-xl pb-2">FORECAST</h2>
+      <h2 className="mt-7 mb-4 text-xl pb-4">FORECAST</h2>
       <div className="flex space-x-4">
         <Day data={data} />
       </div>
