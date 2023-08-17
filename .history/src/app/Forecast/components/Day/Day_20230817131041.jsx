@@ -55,11 +55,11 @@ const Day = ({ data }) => {
   };
 
   return (
-    <div className="mb-2 flex justify-center ">
+    <div className="mb-3 flex justify-center ">
       {nextFiveDaysData.map((item, index) => (
         <div
           key={index}
-          className="flex-col mx-4 p-2 text-gray-600 text-center  "
+          className="flex-col mx-2 p-2 text-gray-600 text-center  "
         >
           <div className="text-lg font-medium">{forecastDays[index]}</div>
           <div className="flex justify-center">

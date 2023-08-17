@@ -59,7 +59,7 @@ const Day = ({ data }) => {
       {nextFiveDaysData.map((item, index) => (
         <div
           key={index}
-          className="flex-col mx-4 p-2 text-gray-600 text-center  "
+          className="flex-col mx-2 p-2 text-gray-600 text-center  "
         >
           <div className="text-lg font-medium">{forecastDays[index]}</div>
           <div className="flex justify-center">
@@ -67,8 +67,8 @@ const Day = ({ data }) => {
           </div>
           <div className="flex justify-center">
             <Temperature>
-              {`${parseFloat(item.main.temp_min).toFixed(1)}`} /{" "}
-              {`${parseFloat(item.main.temp_max).toFixed(1)}`}
+              {`${parseFloat(item.main.temp_min).toFixed(0)}`} /{" "}
+              {`${parseFloat(item.main.temp_max).toFixed(0)}`}
             </Temperature>
           </div>
         </div>
