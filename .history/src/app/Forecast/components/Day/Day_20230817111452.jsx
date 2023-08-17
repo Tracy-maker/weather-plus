@@ -55,17 +55,15 @@ const Day = ({ data }) => {
   };
 
   return (
-    <div className="mb-4 flex justify-center ">
+    <div className="mb-4 flex ">
       {nextFiveDaysData.map((item, index) => (
         <div
           key={index}
-          className="flex-col mx-2 p-2 text-gray-600 text-center  "
+          className="flex-col mx-auto w-48 p-2  text-gray-600 "
         >
-          <div className="text-lg font-medium">{forecastDays[index]}</div>
-          <div className="flex justify-center">
-            <WeatherImage weather={item.weather[0]} />
-          </div>
-          <div className="flex justify-center">
+          <div className="text-center items-center justify-center">
+            <div className="text-lg font-medium">{forecastDays[index]}</div>
+            <WeatherImage className="mx-auto w-48 p-2" weather={item.weather[0]} />
             <Temperature>
               {`${parseFloat(item.main.temp_min).toFixed(1)}`} /{" "}
               {`${parseFloat(item.main.temp_max).toFixed(1)}`}
@@ -75,5 +73,6 @@ const Day = ({ data }) => {
       ))}
     </div>
   );
-}  
+};
+
 export default Day;

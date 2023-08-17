@@ -36,9 +36,9 @@ function App() {
       <div className="mx-auto w-9/12 pb-9 pt-5">
         <Search onSearchChange={handleOnSearchChange} />
       </div>
-      <div className="mx-auto bg-white overflow-hidden w-fit rounded-xl shadow-md  text-white">
+      <div className="mx-auto bg-white overflow-hidden w-2/3 rounded-xl shadow-md  text-white">
         {currentWeather && <Current data={currentWeather} />}
-        <div className="mx-auto flex px-8 text-black">
+        <div className="mx-auto flex px-5 py-10 text-black">
          {forecast && <Forecast data={forecast}/>}
         </div>
       </div>
