@@ -5,6 +5,7 @@ import Search from "./app/Search/Search";
 import p1 from "./assets/background1.jpg";
 import getDailyForecast from "./utils/getDailyForecast/getDailyForecast";
 import getCurrentWeather from "./utils/getWeather/getCurrentWeather";
+import getLoadOptions from "./utils/getLoadOptions/getLoadOptions";
 
 function App() {
   const [currentWeather, setCurrentWeather] = useState(null);
@@ -32,7 +33,7 @@ function App() {
       style={{ backgroundImage: `url(${p1})` }}
     >
       <div className="mx-auto w-9/12 pb-9 pt-5">
-        <Search onSearchChange={handleOnSearchChange}/>
+        <Search onSearchChange={handleOnSearchChange} loadOptions={searchData} />
       </div>
       <div className="mx-auto bg-white overflow-hidden w-fit rounded-xl shadow-md  text-white">
         {currentWeather && <Current data={currentWeather} />}

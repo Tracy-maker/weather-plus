@@ -4,7 +4,6 @@ import getLoadOptions from "../../utils/getLoadOptions/getLoadOptions";
 
 const Search=({ onSearchChange })=> {
   const [search, setSearch] = useState(null);
-  
  const handleChange = (searchData) => {
     setSearch(searchData);
     onSearchChange(searchData);

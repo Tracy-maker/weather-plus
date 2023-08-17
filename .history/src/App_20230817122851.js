@@ -5,6 +5,7 @@ import Search from "./app/Search/Search";
 import p1 from "./assets/background1.jpg";
 import getDailyForecast from "./utils/getDailyForecast/getDailyForecast";
 import getCurrentWeather from "./utils/getWeather/getCurrentWeather";
+import getLoadOptions from "./utils/getLoadOptions/getLoadOptions";
 
 function App() {
   const [currentWeather, setCurrentWeather] = useState(null);

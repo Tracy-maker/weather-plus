@@ -13,7 +13,7 @@ const getLoadOptions = async (inputValue) => {
     if (response.status !==200) {
       throw new Error(`Network response was not ok: ${response.status}`);
     }
-    const options = response.data.data.map((city) => ({
+    const options = (await response.json()).data.map((city) => ({
       value: `${city.latitude} ${city.longitude}`,
       label: `${city.name}, ${city.countryCode}`,
     }));
