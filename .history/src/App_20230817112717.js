@@ -38,7 +38,7 @@ function App() {
       </div>
       <div className="mx-auto bg-white overflow-hidden w-fit rounded-xl shadow-md  text-white">
         {currentWeather && <Current data={currentWeather} />}
-        <div className="mx-auto flex px-8 w-fit text-black">
+        <div className="mx-auto flex w-fit text-black">
          {forecast && <Forecast data={forecast}/>}
         </div>
       </div>
