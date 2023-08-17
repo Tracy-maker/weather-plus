@@ -11,14 +11,6 @@ const getDailyForecast = async (lat, lon) => {
         units: "metric",
       },
     });
-    if (!response.data) {
-      throw new Error("Response data is empty");
-    }
-    return response.data;
-  } catch (error) {
-    console.error(error);
-    return null;
-  }
+  } catch {}
 };
-
 export default getDailyForecast;

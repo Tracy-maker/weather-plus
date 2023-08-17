@@ -12,13 +12,13 @@ const getDailyForecast = async (lat, lon) => {
       },
     });
     if (!response.data) {
-      throw new Error("Response data is empty");
+        throw new Error('Response data is empty');
+      }
+      return response.data;
+    } catch (error) {
+      console.error(error);
+      return null;
     }
-    return response.data;
-  } catch (error) {
-    console.error(error);
-    return null;
-  }
-};
+  };
 
 export default getDailyForecast;
