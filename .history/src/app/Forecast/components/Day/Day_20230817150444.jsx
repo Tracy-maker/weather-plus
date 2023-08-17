@@ -27,6 +27,7 @@ const Day = ({ data }) => {
 
   const filterNextFiveDaysData = (weatherData) => {
     const today = moment();
+
     const fiveDaysLater = moment().add(5, "days");
     const groupedData = {};
 
