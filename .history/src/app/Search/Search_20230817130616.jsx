@@ -7,16 +7,15 @@ const Search = ({ onSearchChange }) => {
 
   const handleChange = (searchData) => {
     onSearchChange(searchData);
-    setSearch(
-      typeof searchData === "string" && searchData.trim() !== ""
-        ? searchData.trim()
-        : ""
-    );
+    if (typeof searchData === "string" && searchData.trim() !== "") {
+      setSearch(searchData.trim());
+    } else {
+      setSearch("");
+    }
   };
-
   return (
     <AsyncPaginate
-      placeholder="Search for city ..."
+      placeholder="Search for city..."
       debounceTimeout={600}
       value={search}
       onChange={handleChange}
