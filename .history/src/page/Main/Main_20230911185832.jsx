@@ -5,7 +5,6 @@ import Forecast from "../../app/Forecast/Forecast";
 import p1 from "./assets/background1.jpg";
 import getDailyForecast from "./utils/getDailyForecast/getDailyForecast";
 import getCurrentWeather from "./utils/getWeather/getCurrentWeather";
-import Navbar from "../../app/Navbar/Navbar";
 
 function Main() {
   const [currentWeather, setCurrentWeather] = useState(null);
@@ -27,8 +26,6 @@ function Main() {
   };
 
   return (
-    <>
-    <Navbar/>
     <div
       className="h-screen w-screen flex-col justify-center items-center bg-cover bg-no-repeat bg-center font-custom text-base"
       style={{ backgroundImage: `url(${p1})` }}
@@ -43,7 +40,6 @@ function Main() {
         </div>
       </div>
     </div>
-    </>
   );
 }
 

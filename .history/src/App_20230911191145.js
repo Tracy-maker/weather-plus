@@ -1,11 +1,11 @@
 import { useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import SignUp from "./page/SignUp/SignUp";
+import Signup from "./page/SignUp/SignUp";
 
 function App() {
   return (
     <div>
-      <SignUp />
+      <Signup />
     </div>
 
     // <Router>
