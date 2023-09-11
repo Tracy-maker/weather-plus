@@ -9,7 +9,7 @@ const Navbar = () => {
 
   return (
     <div className="flex justify-between items-center h-20 max-w-[1240px] mx-auto px-4 text-white">
-      <h1 className="w-full text-3xl font-bold text-[#00df9a]">
+      <h1 className="w-full text-3xl font-bold text-[#00df9a] m-4">
         Weather-APP
       </h1>
       <ul className="hidden md:flex">

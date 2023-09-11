@@ -4,25 +4,23 @@ import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleNav = () => {
-    setNav(!nav);
+    setNav(true);
   };
 
   return (
     <div className="flex justify-between items-center h-20 max-w-[1240px] mx-auto px-4 text-white">
-      <h1 className="w-full text-3xl font-bold text-[#00df9a]">
+      <h1 className="w-full text-3xl font-bold text-[#00df9a] m-4">
         Weather-APP
       </h1>
-      <ul className="hidden md:flex">
+      <ul className="hidden">
         <li className="p-4">HOME</li>
         <li className="p-4">MAIN</li>
         <li className="p-4">RESOURCES</li>
         <li className="p-4">PROFILE</li>
       </ul>
-
       <div onClick={handleNav} className="block md:hidden">
-        {!nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
+        {!nav ? <AiOutlineMenu size={20} /> : <AiOutlineMenu size={20} />}
       </div>
-
       <div
         className={
           !nav
@@ -37,7 +35,7 @@ const Navbar = () => {
           <li className="p-4 border-b border-gray-600">HOME</li>
           <li className="p-4 border-b border-gray-600">MAIN</li>
           <li className="p-4 border-b border-gray-600">RESOURCES</li>
-          <li className="p-4 ">PROFILE</li>
+          <li className="p-4>PROFILE</li>
         </ul>
       </div>
     </div>
