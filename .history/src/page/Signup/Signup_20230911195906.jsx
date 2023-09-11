@@ -58,7 +58,7 @@ function SignUp() {
           </button>
         </form>
         <div className="mt-2 text-center">
-          Already have an account? 
+          Already have an account? <Link to="/Login" className="text-blue-500">Log in</Link>
         </div>
       </div>
     </div>

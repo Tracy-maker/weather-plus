@@ -1,5 +1,4 @@
 import React, { useRef } from "react";
-import { Link } from "react-router-dom";
 
 function SignUp() {
   const emailRef = useRef();
@@ -57,11 +56,9 @@ function SignUp() {
             Sign Up
           </button>
         </form>
-        <div className="mt-2 text-center">
-          Already have an account? 
-        </div>
       </div>
     </div>
   );
 }
+
 export default SignUp;

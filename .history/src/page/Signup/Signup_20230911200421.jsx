@@ -10,7 +10,7 @@ function SignUp() {
     <div className="min-h-screen flex items-center justify-center bg-gray-100">
       <div className="bg-white w-full sm:w-96 p-4 rounded-md shadow-md">
         <h2 className="text-2xl font-semibold text-center mb-4">Sign Up</h2>
-        <form>
+        <>
           <div className="mb-4">
             <label htmlFor="email" className="block text-sm font-medium">
               Email
@@ -51,6 +51,7 @@ function SignUp() {
             />
           </div>
           <button
+            disabled={loading}
             className="w-full bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-200"
             type="submit"
           >
