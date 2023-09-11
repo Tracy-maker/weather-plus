@@ -2,9 +2,6 @@ import React from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 
 const Navbar = () => {
-  const [nav, setNav] = useState(false);
-  const handleNav = (nav) => {};
-
   return (
     <div className="flex justify-between items-center h-20 max-w-[1240px] mx-auto px-4 text-white">
       <h1 className="w-full text-3xl font-bold text-[#00df9a] m-4">
@@ -24,10 +21,10 @@ const Navbar = () => {
           Weather-APP
         </h1>
         <ul className="uppercase p-4">
-          <li className="p-4 border-b border-gray-600">HOME</li>
-          <li className="p-4 border-b border-gray-600">MAIN</li>
-          <li className="p-4 border-b border-gray-600">RESOURCES</li>
-          <li className="p-4 border-b border-gray-600">PROFILE</li>
+          <li className="p-4">HOME</li>
+          <li className="p-4">MAIN</li>
+          <li className="p-4">RESOURCES</li>
+          <li className="p-4">PROFILE</li>
         </ul>
       </div>
     </div>
