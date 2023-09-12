@@ -70,8 +70,7 @@ const Login = () => {
         </div>
       </div>
       <div className="mt-2 text-center">
-        Need an account?&nbsp;
-        <Link to="/Signup" className="text-blue-500">
+        Need an account? <Link to="/Signup" className="text-blue-500">
           Sign Up
         </Link>
       </div>

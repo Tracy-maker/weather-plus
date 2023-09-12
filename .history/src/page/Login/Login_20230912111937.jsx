@@ -26,7 +26,7 @@ const Login = () => {
   }
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100">
+    <div className="min-h-screen flex-clo items-center justify-center bg-gray-100">
       <div className="bg-white w-full sm:w-96 p-4 rounded-md shadow-md">
         <h2 className="text-2xl font-semibold text-center mb-4">Log In</h2>
         {error && <div className="text-red-500 mb-4">{error}</div>}
@@ -70,7 +70,7 @@ const Login = () => {
         </div>
       </div>
       <div className="mt-2 text-center">
-        Need an account?&nbsp;
+        Need an account?
         <Link to="/Signup" className="text-blue-500">
           Sign Up
         </Link>
