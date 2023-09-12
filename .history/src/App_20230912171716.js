@@ -8,7 +8,6 @@ import UpdateProfile from "./components/UpdateProfile/UpdateProfile";
 import { AuthProvider } from "./contexts/AuthContext";
 import Main from "./page/Main/Main";
 import Resources from "./page/Resources/Resources";
-import Profile from "./page/Profile/Profile";
 
 function App() {
   return (
@@ -22,9 +21,10 @@ function App() {
               <Route path="/Login" element={<Login />} />
               <Route path="/" element={<PrivateRoute />}>
                 <Route path="/" element={<Home />} />
+
                 <Route path="/main" element={<Main />} />
                 <Route path="/resources" element={<Resources />} />
-                <Route path="/profile" element={<Profile />} />
+
                 <Route path="/update-profile" element={<UpdateProfile />} />
               </Route>
             </Routes>

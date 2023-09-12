@@ -69,9 +69,9 @@ const Navbar = () => {
           Weather-APP
         </h1>
         <ul className="uppercase p-4">
-          <Link to="/home" className="p-4 border-b border-gray-600">
+          <li to="/home" className="p-4 border-b border-gray-600">
             HOME
-          </Link>
+          </li>
           <Link to="/main" className="p-4 border-b border-gray-600">
             MAIN
           </Link>

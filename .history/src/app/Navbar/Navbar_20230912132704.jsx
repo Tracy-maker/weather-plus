@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
-import { Link, Route, Routes, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../../contexts/AuthContext";
 import Home from "../../page/Home/Home";
 import Main from "../../page/Main/Main";
@@ -45,14 +45,14 @@ const Navbar = () => {
           <Link to="/profile" className="p-4">
             PROFILE
           </Link>
-          <li
-            className=" p-4 hover:underline focus:outline-none"
-            onClick={handleLogout}
-          >
-            Log Out
-          </li>
         </ul>
       </ul>
+      <button
+        className="hover:underline focus:outline-none"
+        onClick={handleLogout}
+      >
+        Log Out
+      </button>
 
       <div onClick={handleNav} className="block md:hidden">
         {!nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
@@ -69,18 +69,10 @@ const Navbar = () => {
           Weather-APP
         </h1>
         <ul className="uppercase p-4">
-          <Link to="/home" className="p-4 border-b border-gray-600">
-            HOME
-          </Link>
-          <Link to="/main" className="p-4 border-b border-gray-600">
-            MAIN
-          </Link>
-          <Link to="/resources" className="p-4 border-b border-gray-600">
-            RESOURCES
-          </Link>
-          <Link to="/profile" className="p-4 ">
-            PROFILE
-          </Link>
+          <Link to="/home" className="p-4 border-b border-gray-600">HOME</Link>
+          <Link to="/main" className="p-4 border-b border-gray-600">MAIN</Link>
+          <Link to="/resources" className="p-4 border-b border-gray-600">RESOURCES</Link>
+          <Link to="/profile" className="p-4 ">PROFILE</Link>
         </ul>
       </div>
     </div>

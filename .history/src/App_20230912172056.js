@@ -8,7 +8,6 @@ import UpdateProfile from "./components/UpdateProfile/UpdateProfile";
 import { AuthProvider } from "./contexts/AuthContext";
 import Main from "./page/Main/Main";
 import Resources from "./page/Resources/Resources";
-import Profile from "./page/Profile/Profile";
 
 function App() {
   return (

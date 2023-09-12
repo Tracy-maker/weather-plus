@@ -45,14 +45,15 @@ const Navbar = () => {
           <Link to="/profile" className="p-4">
             PROFILE
           </Link>
-          <li
-            className=" p-4 hover:underline focus:outline-none"
-            onClick={handleLogout}
-          >
-            Log Out
-          </li>
+          <button
+        className="hover:underline focus:outline-none"
+        onClick={handleLogout}
+      >
+        Log Out
+      </button>
         </ul>
       </ul>
+     
 
       <div onClick={handleNav} className="block md:hidden">
         {!nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
@@ -72,7 +73,11 @@ const Navbar = () => {
           <Link to="/home" className="p-4 border-b border-gray-600">
             HOME
           </Link>
-          <Link to="/main" className="p-4 border-b border-gray-600">
+          <Link
+            to="/main"
+            element={<Main />}
+            className="p-4 border-b border-gray-600"
+          >
             MAIN
           </Link>
           <Link to="/resources" className="p-4 border-b border-gray-600">

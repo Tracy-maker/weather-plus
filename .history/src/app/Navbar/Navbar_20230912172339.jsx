@@ -45,11 +45,13 @@ const Navbar = () => {
           <Link to="/profile" className="p-4">
             PROFILE
           </Link>
-          <li
-            className=" p-4 hover:underline focus:outline-none"
-            onClick={handleLogout}
-          >
-            Log Out
+          <li>
+            <button
+              className="p-4 hover:underline focus:outline-none"
+              onClick={handleLogout}
+            >
+              Log Out
+            </button>
           </li>
         </ul>
       </ul>
@@ -72,7 +74,11 @@ const Navbar = () => {
           <Link to="/home" className="p-4 border-b border-gray-600">
             HOME
           </Link>
-          <Link to="/main" className="p-4 border-b border-gray-600">
+          <Link
+            to="/main"
+            element={<Main />}
+            className="p-4 border-b border-gray-600"
+          >
             MAIN
           </Link>
           <Link to="/resources" className="p-4 border-b border-gray-600">
