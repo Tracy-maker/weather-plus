@@ -7,7 +7,7 @@ const firebaseConfig = {
   projectId: "weather-auth-development",
   storageBucket: "weather-auth-development.appspot.com",
   messagingSenderId: "918247703612",
-  appId: "1:918247703612:web:e82afa55d313626ad2ef39",
+  appId: "1:918247703612:web:e82afa55d313626ad2ef39"
 };
 
 const app = initializeApp(firebaseConfig);

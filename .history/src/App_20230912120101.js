@@ -3,7 +3,7 @@ import SignUp from "./page/SignUp/SignUp";
 import ForgetPassword from "./components/ForgetPassword/ForgetPassword";
 import Login from "./page/Login/Login";
 import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
-import Home from "./page/Home/Home";
+import Main from "./page/Main/Main";
 import UpdateProfile from "./components/UpdateProfile/UpdateProfile";
 import { AuthProvider } from "./contexts/AuthContext";
 

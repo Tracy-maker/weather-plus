@@ -1,25 +1,9 @@
 import React, { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
-import { Link, useNavigate } from "react-router-dom";
-import { useAuth } from "../../contexts/AuthContext";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [nav, setNav] = useState(true);
-  const [error, setError] = useState("");
-  const { logout } = useAuth();
-  const navigate = useNavigate();
-
-  async function handleLogout() {
-    setError("");
-    try {
-      await logout();
-      navigate("/Login");
-    } catch {
-      setError("Failed to log out");
-    }
-  }
-
-
   const handleNav = () => {
     setNav(!nav);
   };
@@ -27,7 +11,6 @@ const Navbar = () => {
   return (
     <div className="flex justify-between items-center h-20 max-w-[1240px] mx-auto px-4 text-white">
       <h1 className="w-full text-3xl font-bold text-[#00df9a]">Weather-APP</h1>
-      {error && <div className="text-red-500 mb-4">{error}</div>}
       <ul className="hidden md:flex">
         <Link to="/home" className="p-4">
           HOME
@@ -35,19 +18,9 @@ const Navbar = () => {
         <Link to="/main" className="p-4">
           MAIN
         </Link>
-        <Link to="/resources" className="p-4">
-          RESOURCES
-        </Link>
-        <Link to="/profile" className="p-4">
-          PROFILE
-        </Link>
+        <Link to="/resources" className="p-4">RESOURCES</Link>
+        <Link className="p-4">PROFILE</Link>
       </ul>
-      <button
-          className="text-blue-500 hover:underline focus:outline-none"
-          onClick={handleLogout}
-        >
-          Log Out
-        </button>
 
       <div onClick={handleNav} className="block md:hidden">
         {!nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}

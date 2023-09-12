@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import { useAuth } from "../../contexts/AuthContext";
+import { useAuth } from "../contexts/AuthContext";
 
 function ForgetPassword() {
   const emailRef = useRef();
@@ -26,11 +26,9 @@ function ForgetPassword() {
   }
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100">
+    <div className="min-h-screen flex items-center justify-center bg-gray-100">
       <div className="bg-white w-full sm:w-96 p-4 rounded-md shadow-md">
-        <h2 className="text-2xl font-semibold text-center mb-4">
-          Password Reset
-        </h2>
+        <h2 className="text-2xl font-semibold text-center mb-4">Password Reset</h2>
         {error && <div className="text-red-500 mb-4">{error}</div>}
         {message && <div className="text-green-500 mb-4">{message}</div>}
         <form onSubmit={handleSubmit}>
@@ -55,16 +53,11 @@ function ForgetPassword() {
           </button>
         </form>
         <div className="mt-3 text-center">
-          <Link to="/Login" className="text-blue-500">
-            Login
-          </Link>
+          <Link to="/Login" className="text-blue-500">Login</Link>
         </div>
       </div>
       <div className="mt-2 text-center w-full">
-        Need an account?{" "}
-        <Link to="/Signup" className="text-blue-500">
-          Sign Up
-        </Link>
+        Need an account? <Link to="/Signup" className="text-blue-500">Sign Up</Link>
       </div>
     </div>
   );

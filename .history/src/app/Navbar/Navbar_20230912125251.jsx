@@ -6,7 +6,7 @@ import { useAuth } from "../../contexts/AuthContext";
 const Navbar = () => {
   const [nav, setNav] = useState(true);
   const [error, setError] = useState("");
-  const { logout } = useAuth();
+  const { currentUser, logout } = useAuth();
   const navigate = useNavigate();
 
   async function handleLogout() {
@@ -27,7 +27,6 @@ const Navbar = () => {
   return (
     <div className="flex justify-between items-center h-20 max-w-[1240px] mx-auto px-4 text-white">
       <h1 className="w-full text-3xl font-bold text-[#00df9a]">Weather-APP</h1>
-      {error && <div className="text-red-500 mb-4">{error}</div>}
       <ul className="hidden md:flex">
         <Link to="/home" className="p-4">
           HOME
