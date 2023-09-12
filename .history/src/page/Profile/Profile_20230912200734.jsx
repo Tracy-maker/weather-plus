@@ -28,7 +28,7 @@ const Profile = () => {
             <h2 className="text-2xl font-semibold text-center mb-4">Profile</h2>
             <div className="flex flex-col justify-center items-center">
               <img
-                className="h-32"
+                className="w-30 h-32"
                 src="https://robohash.org/e7900c613633d3b1707884653f0705dc?set=set4&bgset=&size=400x400"
                 alt="avatar"
               />
