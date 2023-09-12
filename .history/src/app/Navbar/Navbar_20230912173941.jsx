@@ -24,11 +24,11 @@ const Navbar = () => {
   };
 
   return (
-    <div className="flex justify-between items-center h-20 max-w-[1240px] mx-auto px-4 text-white">
-      <h1 className="whitespace-nowrap w-full text-3xl font-bold text-[#00df9a]">Weather-APP</h1>
+    <div className="min-w-[300px] flex justify-between items-center h-20 max-w-[1240px] mx-auto px-4 text-white">
+      <h1 className="w-full text-3xl font-bold text-[#00df9a]">Weather-APP</h1>
       {error && <div className="text-red-500 mb-4">{error}</div>}
-      <ul className="hidden md:flex">
-        <ul className="hidden md:flex">
+      <ul className="hidden md:flex sm:flex">
+        <ul className="hidden md:flex sm:flex">
           <Link to="/home" className="p-4">
             HOME
           </Link>
@@ -42,7 +42,7 @@ const Navbar = () => {
             PROFILE
           </Link>
           <li
-            className="whitespace-nowrap p-4 hover:underline focus:outline-none"
+            className=" p-4 hover:underline focus:outline-none"
             onClick={handleLogout}
           >
             Log Out
@@ -74,7 +74,7 @@ const Navbar = () => {
           <Link to="/resources" className="p-4 border-b border-gray-600">
             RESOURCES
           </Link>
-          <Link to="/profile" className="p-4 border-b border-gray-600 ">
+          <Link to="/profile" className="p-4 border-b border-gray-600">
             PROFILE
           </Link>
           <li

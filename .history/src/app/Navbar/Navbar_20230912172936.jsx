@@ -1,7 +1,11 @@
 import React, { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, Route, Routes, useNavigate } from "react-router-dom";
 import { useAuth } from "../../contexts/AuthContext";
+import Home from "../../page/Home/Home";
+import Main from "../../page/Main/Main";
+import Resources from "../../page/Resources/Resources";
+import Profile from "../../page/Profile/Profile";
 
 const Navbar = () => {
   const [nav, setNav] = useState(true);
@@ -25,7 +29,7 @@ const Navbar = () => {
 
   return (
     <div className="flex justify-between items-center h-20 max-w-[1240px] mx-auto px-4 text-white">
-      <h1 className="whitespace-nowrap w-full text-3xl font-bold text-[#00df9a]">Weather-APP</h1>
+      <h1 className="w-full text-3xl font-bold text-[#00df9a]">Weather-APP</h1>
       {error && <div className="text-red-500 mb-4">{error}</div>}
       <ul className="hidden md:flex">
         <ul className="hidden md:flex">
@@ -42,7 +46,7 @@ const Navbar = () => {
             PROFILE
           </Link>
           <li
-            className="whitespace-nowrap p-4 hover:underline focus:outline-none"
+            className=" p-4 hover:underline focus:outline-none"
             onClick={handleLogout}
           >
             Log Out
@@ -74,15 +78,9 @@ const Navbar = () => {
           <Link to="/resources" className="p-4 border-b border-gray-600">
             RESOURCES
           </Link>
-          <Link to="/profile" className="p-4 border-b border-gray-600 ">
+          <Link to="/profile" className="p-4 ">
             PROFILE
           </Link>
-          <li
-            className=" p-4 hover:underline focus:outline-none"
-            onClick={handleLogout}
-          >
-            Log Out
-          </li>
         </ul>
       </div>
     </div>
