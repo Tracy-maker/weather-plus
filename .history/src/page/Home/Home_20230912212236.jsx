@@ -11,7 +11,7 @@ const Home = () => {
         className="h-screen w-screen justify-center items-center bg-cover bg-no-repeat bg-center"
         style={{ backgroundImage: `url(${p3})` }}
       >
-        <div className="text-2xl text-white font-custom pt-16 px-20">
+        <div className="text-2xl text-white font-custom pt-28 px-20">
           <Typewriter
             options={{
               strings: ["Welcome to our whimsical weather wonderland!"],

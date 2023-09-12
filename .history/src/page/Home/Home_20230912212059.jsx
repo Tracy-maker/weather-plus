@@ -11,7 +11,7 @@ const Home = () => {
         className="h-screen w-screen justify-center items-center bg-cover bg-no-repeat bg-center"
         style={{ backgroundImage: `url(${p3})` }}
       >
-        <div className="text-2xl text-white font-custom pt-16 px-20">
+        <div className="text-2xl text-white font-custom pt-20 px-20">
           <Typewriter
             options={{
               strings: ["Welcome to our whimsical weather wonderland!"],
@@ -19,7 +19,7 @@ const Home = () => {
               loop: true,
             }}
           />
-          <p className="text-2xl text-white font-custom my-20 mx-50 font-bold tracking-wide leading-10">
+          <p className="text-2xl text-white font-custom my-20 mx-50">
             ☀️ Here, you don't need to chase rainbows to find the forecast; 
             just type in the name of your city, and we'll conjure up the most
             enchanting weather details for you. Whether you're in search of
