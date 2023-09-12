@@ -29,7 +29,7 @@ const Navbar = () => {
       {error && <div className="text-red-500 mb-4">{error}</div>}
       <ul className="hidden md:flex">
         <ul className="hidden md:flex">
-          <Link to="/" className="p-4">
+          <Link to="/home" className="p-4">
             HOME
           </Link>
           <Link to="/main" className="p-4">
@@ -65,7 +65,7 @@ const Navbar = () => {
           Weather-APP
         </h1>
         <ul className="uppercase p-4 flex flex-col">
-          <Link to="/" className="p-4 border-b border-gray-600">
+          <Link to="/home" className="p-4 border-b border-gray-600">
             HOME
           </Link>
           <Link to="/main" className="p-4 border-b border-gray-600">

@@ -10,6 +10,7 @@ const Profile = () => {
     <>
       <Navbar />
       <div className="relative min-h-screen">
+      
         <video
           autoPlay
           loop

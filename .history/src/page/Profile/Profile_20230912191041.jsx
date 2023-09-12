@@ -10,6 +10,7 @@ const Profile = () => {
     <>
       <Navbar />
       <div className="relative min-h-screen">
+        {/* Video Container */}
         <video
           autoPlay
           loop
@@ -17,7 +18,7 @@ const Profile = () => {
           className="absolute inset-0 w-full h-full object-cover"
         >
           <source
-            src="https://player.vimeo.com/external/297927791.sd.mp4?s=5ceeec8c83fcb634312c157cc101b8bd19969b61&profile_id=164&oauth2_token_id=57447761"
+            src="https://player.vimeo.com/external/334034649.sd.mp4?s=b69ed030678f783042abb117217b23272ec15eaa&profile_id=164&oauth2_token_id=57447761"
             type="video/mp4"
           />
         </video>

@@ -17,7 +17,7 @@ const Profile = () => {
           className="absolute inset-0 w-full h-full object-cover"
         >
           <source
-            src="https://player.vimeo.com/external/297927791.sd.mp4?s=5ceeec8c83fcb634312c157cc101b8bd19969b61&profile_id=164&oauth2_token_id=57447761"
+            src="https://v.ftcdn.net/03/11/22/37/240_F_311223791_152jV6qAZsEhwd7MTazoWfOwgbzv0Lps_ST.mp4"
             type="video/mp4"
           />
         </video>
