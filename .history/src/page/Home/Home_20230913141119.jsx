@@ -8,10 +8,10 @@ const Home = () => {
     <>
       <Navbar />
       <div
-        className="h-screen w-screen flex-col justify-center items-center bg-cover bg-no-repeat bg-center"
+        className="h-screen w-screen justify-center items-center bg-cover bg-no-repeat bg-center"
         style={{ backgroundImage: `url(${p3})` }}
       >
-        <div className="text-2xl text-white font-custom pt-5 px-5 sm:px-10 md:px-20 lg:px-32 xl:px-40">
+        <div className="text-2xl text-white font-custom pt-10 px-20">
           <Typewriter
             options={{
               strings: ["Welcome to our whimsical weather wonderland!"],
@@ -19,9 +19,9 @@ const Home = () => {
               loop: true,
             }}
           />
-          <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-3xl text-white font-custom my-5 sm:my-10 mx-5 sm:mx-10 md:mx-20 lg:mx-32 xl:mx-40 font-bold tracking-wide leading-7 sm:leading-8 md:leading-9 lg:leading-10">
-            ☀️ Here, you don't need to chase rainbows to find the forecast;
-            just type in the name of your city, and we'll conjure up the most
+          <p className="text-xl text-white font-custom my-10 mx-50 font-bold tracking-wide leading-10">
+            ☀️ Here, you don't need to chase rainbows to find the forecast; just
+            type in the name of your city, and we'll conjure up the most
             enchanting weather details for you. Whether you're in search of
             sunshine, showers, or snowflakes, our weather forecast spells it all
             out, not just for today but for the next five days as well. So, get
