@@ -20,11 +20,12 @@ const Resources = () => {
             }}
           />
           <p className="text-xl text-white font-custom my-4 mx-50 font-bold tracking-wide leading-10">
-            💻 Firebase powers the project's user management, providing secure
-            login, registration, and authentication processes. This integration
-            ensures user confidence in accessing the app's features, with robust
-            identity verification and access control, bolstering trust and
-            reliability. .
+            💻 Firebase powers the project's user management, providing secure login, registration, and authentication processes. This integration ensures user confidence in accessing the app's features, with robust identity verification and access control, bolstering trust and reliability.
+
+
+
+
+.
           </p>
         </div>
         <div className="text-2xl text-white font-custom pt-6 px-20">
@@ -36,9 +37,9 @@ const Resources = () => {
             }}
           />
           <p className="text-xl text-white font-custom my-4 mx-50 font-bold tracking-wide leading-10">
-            ⌨️ The main project utilizes a front-end technology stack that
-            includes React, React Router, Tailwind CSS, Momentum Timezone, React
-            Select Async Paginate, github, and Axios.
+            ⌨️ Here, you don't need to chase rainbows to find the forecast; just
+            type in the name of your city, and we'll conjure up the most
+            enchanting weather details for you.
           </p>
         </div>
         <div className="text-2xl text-white font-custom pt-6 px-20">
@@ -50,9 +51,9 @@ const Resources = () => {
             }}
           />
           <p className="text-xl text-white font-custom my-4 mx-50 font-bold tracking-wide leading-10">
-            🖥 The data for the Api is pulled from the following two websites.
-            1.https://openweathermap.org/api,
-            2.https://rapidapi.com/wirefreethought/api/geodb-cities
+            🖥 Here, you don't need to chase rainbows to find the forecast; just
+            type in the name of your city, and we'll conjure up the most
+            enchanting weather details for you.
           </p>
         </div>
       </div>

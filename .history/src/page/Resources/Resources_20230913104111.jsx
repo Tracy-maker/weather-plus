@@ -50,9 +50,7 @@ const Resources = () => {
             }}
           />
           <p className="text-xl text-white font-custom my-4 mx-50 font-bold tracking-wide leading-10">
-            🖥 The data for the Api is pulled from the following two websites.
-            1.https://openweathermap.org/api,
-            2.https://rapidapi.com/wirefreethought/api/geodb-cities
+            🖥 The data for the Api is pulled from the following two websites
           </p>
         </div>
       </div>
