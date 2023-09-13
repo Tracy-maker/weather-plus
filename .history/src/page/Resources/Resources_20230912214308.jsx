@@ -1,15 +1,15 @@
 import React from "react";
 import Navbar from "../../app/Navbar/Navbar";
-import p3 from "../../assets/Home.jpg";
+import p4 from "../../assets/Resources.jpg";
 import Typewriter from "typewriter-effect";
 
-const Home = () => {
+const Resources = () => {
   return (
     <>
       <Navbar />
       <div
-        className="h-screen w-screen justify-center items-center bg-cover bg-no-repeat bg-center"
-        style={{ backgroundImage: `url(${p3})`}}
+        className="h-screen w-screen flex-col justify-center items-center bg-cover bg-no-repeat bg-center font-custom text-base"
+        style={{ backgroundImage: `url(${p4})` }}
       >
         <div className="text-2xl text-white font-custom pt-16 px-20">
           <Typewriter
@@ -20,8 +20,8 @@ const Home = () => {
             }}
           />
           <p className="text-2xl text-white font-custom my-20 mx-50 font-bold tracking-wide leading-10">
-            ☀️ Here, you don't need to chase rainbows to find the forecast; 
-            just type in the name of your city, and we'll conjure up the most
+            ☀️ Here, you don't need to chase rainbows to find the forecast; just
+            type in the name of your city, and we'll conjure up the most
             enchanting weather details for you. Whether you're in search of
             sunshine, showers, or snowflakes, our weather forecast spells it all
             out, not just for today but for the next five days as well. So, get
@@ -35,4 +35,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Resources;

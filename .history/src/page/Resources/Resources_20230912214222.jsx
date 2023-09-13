@@ -1,17 +1,16 @@
 import React from "react";
 import Navbar from "../../app/Navbar/Navbar";
-import p3 from "../../assets/Home.jpg";
-import Typewriter from "typewriter-effect";
+import p4 from "../../assets/Resources.jpg";
 
-const Home = () => {
+const Resources = () => {
   return (
     <>
       <Navbar />
       <div
-        className="h-screen w-screen justify-center items-center bg-cover bg-no-repeat bg-center"
-        style={{ backgroundImage: `url(${p3})`}}
+        className="h-screen w-screen flex-col justify-center items-center bg-cover bg-no-repeat bg-center font-custom text-base"
+        style={{ backgroundImage: `url(${p4})` }}
       >
-        <div className="text-2xl text-white font-custom pt-16 px-20">
+          <div className="text-2xl text-white font-custom pt-16 px-20">
           <Typewriter
             options={{
               strings: ["Welcome to our whimsical weather wonderland!"],
@@ -35,4 +34,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Resources;

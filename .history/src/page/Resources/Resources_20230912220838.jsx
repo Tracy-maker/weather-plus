@@ -28,7 +28,7 @@ const Resources = () => {
         <div className="text-2xl text-white font-custom pt-6 px-20">
           <Typewriter
             options={{
-              strings: ["Front-end technologies"],
+              strings: ["Frontend"],
               autoStart: true,
               loop: true,
             }}

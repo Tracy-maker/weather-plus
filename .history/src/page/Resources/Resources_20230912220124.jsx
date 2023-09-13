@@ -11,10 +11,10 @@ const Resources = () => {
         className="h-screen w-screen flex-col justify-center items-center bg-cover bg-no-repeat bg-center font-custom text-base"
         style={{ backgroundImage: `url(${p4})` }}
       >
-        <div className="text-2xl text-white font-custom pt-6 px-20">
+        <div className="text-2xl text-white font-custom pt-10 px-20">
           <Typewriter
             options={{
-              strings: ["Back-end and data management"],
+              strings: ["Welcome to our whimsical weather wonderland!"],
               autoStart: true,
               loop: true,
             }}
@@ -25,30 +25,30 @@ const Resources = () => {
             enchanting weather details for you.
           </p>
         </div>
-        <div className="text-2xl text-white font-custom pt-6 px-20">
+        <div className="text-2xl text-white font-custom pt-10 px-20">
           <Typewriter
             options={{
-              strings: ["Front-end technologies"],
+              strings: ["Welcome to our whimsical weather wonderland!"],
               autoStart: true,
               loop: true,
             }}
           />
           <p className="text-xl text-white font-custom my-4 mx-50 font-bold tracking-wide leading-10">
-            ⌨️ Here, you don't need to chase rainbows to find the forecast; just
+            💻 Here, you don't need to chase rainbows to find the forecast; just
             type in the name of your city, and we'll conjure up the most
             enchanting weather details for you.
           </p>
         </div>
-        <div className="text-2xl text-white font-custom pt-6 px-20">
+        <div className="text-2xl text-white font-custom pt-10 px-20">
           <Typewriter
             options={{
-              strings: ["API"],
+              strings: ["Welcome to our whimsical weather wonderland!"],
               autoStart: true,
               loop: true,
             }}
           />
           <p className="text-xl text-white font-custom my-4 mx-50 font-bold tracking-wide leading-10">
-            🖥 Here, you don't need to chase rainbows to find the forecast; just
+            💻 Here, you don't need to chase rainbows to find the forecast; just
             type in the name of your city, and we'll conjure up the most
             enchanting weather details for you.
           </p>
