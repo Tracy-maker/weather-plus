@@ -6,7 +6,6 @@ import p1 from "../../assets/background1.jpg";
 import getDailyForecast from "../../utils/getDailyForecast/getDailyForecast";
 import getCurrentWeather from "../../utils/getWeather/getCurrentWeather";
 import Navbar from "../../app/Navbar/Navbar";
-import Typewriter from "typewriter-effect";
 
 const Main = () => {
   const [currentWeather, setCurrentWeather] = useState(null);
@@ -38,10 +37,10 @@ const Main = () => {
           <Search onSearchChange={handleOnSearchChange} />
         </div>
 
-        <div className="text-2xl text-white font-custom py-1 px-96">
+        <div className="text-2xl text-white font-custom pt-16 px-20">
           <Typewriter
             options={{
-              strings: ["Please enter the city you are searching for..."],
+              strings: ["Welcome to our whimsical weather wonderland!"],
               autoStart: true,
               loop: true,
             }}

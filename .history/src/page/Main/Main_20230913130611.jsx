@@ -6,7 +6,6 @@ import p1 from "../../assets/background1.jpg";
 import getDailyForecast from "../../utils/getDailyForecast/getDailyForecast";
 import getCurrentWeather from "../../utils/getWeather/getCurrentWeather";
 import Navbar from "../../app/Navbar/Navbar";
-import Typewriter from "typewriter-effect";
 
 const Main = () => {
   const [currentWeather, setCurrentWeather] = useState(null);
@@ -37,18 +36,7 @@ const Main = () => {
         <div className="mx-auto w-11/12 sm:w-9/12 md:w-8/12 lg:w-7/12 xl:w-6/12 pb-9 pt-5">
           <Search onSearchChange={handleOnSearchChange} />
         </div>
-
-        <div className="text-2xl text-white font-custom py-1 px-96">
-          <Typewriter
-            options={{
-              strings: ["Please enter the city you are searching for..."],
-              autoStart: true,
-              loop: true,
-            }}
-          />
-        </div>
-
-        <div className="mx-auto bg-white overflow-hidden w-full sm:w-3/4 md:w-3/4 lg:w-3/4 xl:w-7/12 rounded-xl shadow-md text-white">
+        <div className="mx-auto bg-white overflow-hidden w-full sm:w-auto md:w-auto lg:w-auto xl:w-auto rounded-xl shadow-md text-white">
           {currentWeather && <Current data={currentWeather} />}
           <div className="mx-auto flex px-8 sm:px-12 lg:px-16 xl:px-20 w-auto text-black">
             {forecast && <Forecast data={forecast} />}
