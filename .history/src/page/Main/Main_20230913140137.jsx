@@ -38,7 +38,7 @@ const Main = () => {
           <Search onSearchChange={handleOnSearchChange} />
         </div>
 
-        <div className="text-2xl text-white font-custom py-1 px-6 sm:px-12 md:px-36 lg:px-56 xl:px-96">
+        <div className="text-2xl text-white font-custom py-1 px-6 sm:px-12 md:px-16 lg:px-20 xl:px-90">
           <Typewriter
             options={{
               strings: ["Please enter the city you are searching for..."],

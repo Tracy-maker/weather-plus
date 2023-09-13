@@ -38,15 +38,16 @@ const Main = () => {
           <Search onSearchChange={handleOnSearchChange} />
         </div>
 
-        <div className="text-2xl text-white font-custom py-1 px-6 sm:px-12 md:px-36 lg:px-56 xl:px-96">
-          <Typewriter
-            options={{
-              strings: ["Please enter the city you are searching for..."],
-              autoStart: true,
-              loop: true,
-            }}
-          />
-        </div>
+        <div className="text-2xl text-white font-custom py-1 px-6 sm:px-12 md:px-16 lg:px-20 xl:px-32">
+  <Typewriter
+    options={{
+      strings: ["Please enter the city you are searching for..."],
+      autoStart: true,
+      loop: true,
+    }}
+  />
+</div>
+
 
         <div className="mx-auto bg-white overflow-hidden w-full sm:w-3/4 md:w-3/4 lg:w-3/4 xl:w-7/12 rounded-xl shadow-md text-white">
           {currentWeather && <Current data={currentWeather} />}
