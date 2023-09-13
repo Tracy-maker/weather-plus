@@ -11,7 +11,7 @@ const Home = () => {
         className="h-screen w-screen flex-col justify-center items-center bg-cover bg-no-repeat bg-center"
         style={{ backgroundImage: `url(${p3})` }}
       >
-        <div className="text-2xl text-white font-custom pt-5 px-5 sm:px-16 md:px-20 lg:px-26 xl:px-30">
+        <div className="text-2xl text-white font-custom pt-5 px-5 sm:px-10 md:px-20 lg:px-25 xl:px-30">
           <Typewriter
             options={{
               strings: ["Welcome to our whimsical weather wonderland!"],
@@ -20,14 +20,14 @@ const Home = () => {
             }}
           />
           <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-3xl text-white font-custom my-5 sm:my-10 mx-5 sm:mx-10 md:mx-20 lg:mx-32 xl:mx-40 font-bold tracking-wide leading-7 sm:leading-8 md:leading-9 lg:leading-10">
-            ☀️ Here, you don't need to chase rainbows to find the forecast; just
-            type in the name of your city, and we'll conjure up the most
+            ☀️ Here, you don't need to chase rainbows to find the forecast;
+            just type in the name of your city, and we'll conjure up the most
             enchanting weather details for you. Whether you're in search of
             sunshine, showers, or snowflakes, our weather forecast spells it all
             out, not just for today but for the next five days as well. So, get
             ready to embark on a magical meteorological journey as we paint the
             skies with the latest updates for your favorite places. Let's
-            sprinkle a little weather magic into your day ☃️ !
+            sprinkle a little weather magic into your day ☃️!
           </p>
         </div>
       </div>

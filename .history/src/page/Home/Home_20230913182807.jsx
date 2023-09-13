@@ -20,9 +20,9 @@ const Home = () => {
             }}
           />
           <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-3xl text-white font-custom my-5 sm:my-10 mx-5 sm:mx-10 md:mx-20 lg:mx-32 xl:mx-40 font-bold tracking-wide leading-7 sm:leading-8 md:leading-9 lg:leading-10">
-            ☀️ Here, you don't need to chase rainbows to find the forecast; just
-            type in the name of your city, and we'll conjure up the most
-            enchanting weather details for you. Whether you're in search of
+            ☀️ Here, you don't need to chase rainbows to find the forecast;
+            just type in the name of your city, and we'll conjure up the most
+            enchanting weather details for you.</br> Whether you're in search of
             sunshine, showers, or snowflakes, our weather forecast spells it all
             out, not just for today but for the next five days as well. So, get
             ready to embark on a magical meteorological journey as we paint the
