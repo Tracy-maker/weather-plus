@@ -42,7 +42,7 @@ const Navbar = () => {
             PROFILE
           </Link>
           <li
-            className="whitespace-nowrap p-4 focus:outline-none"
+            className="whitespace-nowrap p-4  focus:outline-none"
             onClick={handleLogout}
           >
             Log Out
