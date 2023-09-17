@@ -13,7 +13,7 @@ const Home = () => {
       >
         <div className=" pt-9 sm:px-16 md:px-20 lg:px-26 xl:px-30">
         
-          <p className=" leading-loose text-lg sm:text-xl md:text-2xl lg:text-2xl xl:text-2xl text-white font-custom my-5 sm:my-10 sm:mx-10 md:mx-30 lg:mx-40 xl:mx-50 font-bold tracking-wide">
+          <p className=" leading-loose text-lg sm:text-xl md:text-2xl lg:text-2xl xl:text-2xl text-white font-custom my-5 sm:my-10 sm:mx-10 md:mx-30 lg:mx-32 xl:mx-40 font-bold tracking-wide">
           <h2>"Welcome to our whimsical weather wonderland!"</h2>
             ☀️ Here, you don't need to chase rainbows to find the forecast; just
             type in the name of your city, and we'll conjure up the most
